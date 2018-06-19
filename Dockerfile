@@ -6,7 +6,7 @@
 #
 
 FROM ubuntu:18.04
-MAINTAINER Akarsh Seggemu <sakarshkumar@gmail.com>
+MAINTAINER Iqbal Khan <iqbalkhan1.618@gmail.com>
 
 ENV VERSION_SDK_TOOLS "3859397"
 
