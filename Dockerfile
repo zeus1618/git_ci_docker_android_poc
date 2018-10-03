@@ -28,9 +28,10 @@ RUN apt-get -qq update && \
       lib32z1 \
       unzip \
       wget \
+      locales \
+      locales-all \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN apt-get install -y locales locales-all
 ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
