@@ -53,4 +53,4 @@ RUN mkdir -p /root/.android && \
   ${ANDROID_HOME}/tools/bin/sdkmanager --update && yes | ${ANDROID_HOME}/tools/bin/sdkmanager --licenses
 
 RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done < /sdk/packages.txt && \
-    ${ANDROID_HOME}/tools/bin/sdkmanager ${PACKAGES}
+    ${ANDROID_HOME}/tools/bin/sdkmanager ${PACKAGES} && yes | ${ANDROID_HOME}/tools/bin/sdkmanager --licenses
